@@ -73,7 +73,7 @@ const Home: React.FC = () => {
       </section>
 
       {/* Sección siguiente, donde se desplazará el usuario */}
-      <section ref={nextSectionRef} className="bg-beige_claro pt-24 pb-4 min-h-screen">
+      <section ref={nextSectionRef} className="bg-beige_claro pt-24 sm:pt-4 pb-4 min-h-screen">
         {/* Contenedor de las imágenes con centrado vertical y horizontal */}
         <div className="flex flex-col sm:flex-row sm:space-x-4 justify-center items-center space-y-4 sm:space-y-0">
           <div className="flex flex-col items-center sm:hidden relative">
@@ -92,8 +92,8 @@ const Home: React.FC = () => {
               <Image
                 src={images[currentImage].src}
                 alt={images[currentImage].alt}
-                width={300}
-                height={300}
+                width={250}
+                height={250}
                 className="object-cover rounded-lg"
               />
             </div>
@@ -135,7 +135,7 @@ const Home: React.FC = () => {
       </section>
 
       {/* Nueva Sección de Agendar cita */}
-      <section ref={agendarSectionRef} className="bg-beige_oscuro py-4 sm:py-24 min-h-screen flex sm:flex-row flex-col items-center justify-center px-6 sm:px-12">
+      <section ref={agendarSectionRef} className="bg-beige_oscuro py-4 min-h-screen flex sm:flex-row flex-col items-center justify-center px-6 sm:px-12">
         <div className="flex-1 sm:w-1/2">
           <Image
             src="/home/img_cita.jpg"  // Imagen representativa de la sección
