@@ -7,7 +7,7 @@ import Footer from './components/Footer'; // Importa el componente Footer
 const inter = Inter({ subsets: ['latin'] });
 
 export const metadata = {
-  title: 'Pie Eterna',
+  title: 'Piel Eterna',
   description: 'Sitio web de Pie Eterna',
 };
 

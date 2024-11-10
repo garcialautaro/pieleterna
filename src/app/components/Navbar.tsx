@@ -28,7 +28,7 @@ const Navbar: React.FC = () => {
   };
 
   return (
-    <nav className="bg-beige_claro text-beige_oscuro p-4">
+    <nav className="bg-beige_claro text-beige_oscuro p-4 border-b-4 border-beige_oscuro">
       <div className="container mx-auto flex items-center justify-between">
         {/* Logo con borde tipo nube */}
         <Link href="/">
