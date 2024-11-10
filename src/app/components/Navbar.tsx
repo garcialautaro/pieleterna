@@ -8,9 +8,12 @@ import logo from '/public/logo_no_bg.png'; // Importamos el logo desde la carpet
 // Definimos una lista de enlaces para el menú
 const menuItems = [
   { label: 'Inicio', href: '/' },
-  { label: 'Quiénes somos', href: '/quienes-somos' },
-  { label: 'Camuflaje cero tinta', href: '/camuflaje-cero-tinta' },
-  { label: 'Contáctenos', href: '/contacto' },
+  // { label: 'Quiénes somos', href: '/quienes-somos' },
+  { label: 'Quiénes somos', href: '/' },
+  // { label: 'Camuflaje cero tinta', href: '/camuflaje-cero-tinta' },
+  { label: 'Camuflaje cero tinta', href: '/' },
+  // { label: 'Contáctenos', href: '/contacto' },
+  { label: 'Contáctenos', href: '/' },
 ];
 
 // Componente Navbar
