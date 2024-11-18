@@ -12,6 +12,7 @@ export default {
         blanco_hueso: "#F8F8F8",
         beige_claro: "#E4D0B6",
         negro_ebano: "#111111",
+        negro_claro: "#181516",
         beige_oscuro: "#A69279",
       },
     },

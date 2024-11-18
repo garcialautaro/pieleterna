@@ -31,7 +31,7 @@ const Navbar: React.FC = () => {
   };
 
   return (
-    <nav className="bg-beige_claro text-beige_oscuro p-4 border-b-4 border-beige_oscuro">
+    <nav className="bg-negro_ebano text-beige_claro p-4 border-b-4 border-beige_oscuro">
       <div className="container mx-auto flex items-center justify-between">
         {/* Logo con borde tipo nube */}
         <Link href="/">
@@ -46,7 +46,7 @@ const Navbar: React.FC = () => {
             <a
               key={item.href}
               href={item.href}
-              className="hover:text-negro_ebano"
+              className="hover:text-beige_oscuro"
             >
               <strong>{item.label}</strong>
             </a>
@@ -55,7 +55,7 @@ const Navbar: React.FC = () => {
 
         {/* Icono de menú para mobile */}
         <button className="md:hidden" onClick={toggleMenu}>
-          <FiMenu className="text-negro_ebano text-2xl" />
+          <FiMenu className="text-beige_claro text-2xl" />
         </button>
       </div>
 
@@ -69,7 +69,7 @@ const Navbar: React.FC = () => {
           <a
             key={item.href}
             href={item.href}
-            className="block py-2 px-4 hover:text-negro_ebano"
+            className="block py-2 px-4 hover:text-beige_oscuro"
             onClick={handleMenuItemClick} // Colapsa el menú al hacer clic
           >
             <strong>{item.label}</strong>
