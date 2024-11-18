@@ -25,7 +25,7 @@ const CamuflajeCeroTinta: React.FC = () => {
         {/* Descripción inicial */}
         <p className="text-lg sm:text-xl mb-6 text-center text-beige_oscuro">
           Transforma tus estrías sin necesidad de tintas con nuestro tratamiento exclusivo:{" "}
-          <span className="font-semibold">Camuflaje de Estrías Cero Tinta</span>.
+          <span className="font-semibold text-beige_claro">Camuflaje de Estrías Cero Tinta</span>.
         </p>
         <p className="text-lg sm:text-xl mb-12 text-center text-beige_oscuro">
           Este innovador procedimiento reestructura y regenera la piel, logrando{" "}
