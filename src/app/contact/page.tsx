@@ -2,11 +2,6 @@
 import React from "react";
 import { FaWhatsapp } from 'react-icons/fa';
 
-interface ImageData {
-  src: string;
-  alt: string;
-}
-
 const Contact: React.FC = () => {
   // Lista de imágenes proporcionadas
   return (
