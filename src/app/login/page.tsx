@@ -4,7 +4,7 @@ import { useRouter } from "next/navigation"; // Usamos `useRouter` para navegaci
 import { signInWithEmailAndPassword } from "firebase/auth";
 import { auth } from "../../lib/firebase"; // Asegúrate de que esté bien importado
 
-const Login = () => {
+const Login: React.FC = () => {
   const [email, setEmail] = useState<string>(""); // Email del usuario
   const [password, setPassword] = useState<string>(""); // Contraseña del usuario
   const [error, setError] = useState<string | null>(null); // Estado para manejar errores
