@@ -65,14 +65,27 @@ const Home: React.FC = () => {
     <div>
       {/* Sección de imagen de fondo con el botón */}
       <section className="relative h-[calc(100vh-80px)]">
-        {/* Imagen de fondo */}
-        <Image
-          src="/home/background_home.png"
-          alt="Background Home"
-          layout="fill"
-          objectFit="cover"
-          className="z-0"
-        />
+        {/* Imagen de fondo para escritorio */}
+        <div className="hidden sm:block">
+          <Image
+            src="/home/background_home.png"
+            alt="Background Home Desktop"
+            layout="fill"
+            objectFit="cover"
+            className="z-0"
+          />
+        </div>
+
+        {/* Imagen de fondo para móviles */}
+        <div className="sm:hidden">
+          <Image
+            src="/home/background_home_mobile.png"
+            alt="Background Home Mobile"
+            layout="fill"
+            objectFit="cover"
+            className="z-0"
+          />
+        </div>
 
         {/* Botón "Quiero saber más" */}
         <div className="absolute bottom-12 w-full flex justify-center">
