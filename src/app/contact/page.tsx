@@ -9,12 +9,6 @@ interface ImageData {
 
 const Contact: React.FC = () => {
   // Lista de imágenes proporcionadas
-  const images: ImageData[] = [
-    { src: "/home/img_home_2.png", alt: "Imagen 2" },
-    { src: "/home/img_home_1.png", alt: "Imagen 1" },
-    { src: "/home/img_home_3.png", alt: "Imagen 3" },
-  ];
-
   return (
     <div className="bg-negro_ebano text-beige_claro min-h-screen flex flex-col items-center justify-center px-6 sm:px-12">
       <div className="max-w-3xl text-center">
