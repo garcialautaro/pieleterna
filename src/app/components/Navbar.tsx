@@ -9,11 +9,11 @@ import logo from '/public/logo_no_bg.png'; // Importamos el logo desde la carpet
 const menuItems = [
   { label: 'Inicio', href: '/' },
   // { label: 'Quiénes somos', href: '/quienes-somos' },
-  { label: 'Quiénes somos', href: '/' },
+  { label: 'Quiénes somos', href: '/about-us' },
   // { label: 'Camuflaje cero tinta', href: '/camuflaje-cero-tinta' },
-  { label: 'Camuflaje cero tinta', href: '/' },
+  { label: 'Camuflaje cero tinta', href: "/camuflaje-cero-tinta" },
   // { label: 'Contáctenos', href: '/contacto' },
-  { label: 'Contáctenos', href: '/' },
+  { label: 'Contáctenos', href: '/contact' },
 ];
 
 // Componente Navbar

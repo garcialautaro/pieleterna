@@ -159,8 +159,8 @@ const Home: React.FC = () => {
           />
         </div>
         <div className="flex-1 sm:w-1/2 text-center mb-6 sm:mb-0">
-          <h1 className="text-5xl font-semibold text-beige_claro mb-6 mt-4 sm:mt-0">Florencia García</h1>
-          <h2 className="text-3xl font-semibold text-beige_claro mb-4">Camuflaje de estrías cero tinta</h2>
+          <h1 className="text-4xl font-semibold text-beige_claro mb-6 mt-4 sm:mt-0">Florencia García Valot</h1>
+          <h2 className="text-2xl font-semibold text-beige_claro mb-4">Camuflaje de estrías cero tinta</h2>
           <p className="text-xl text-beige_oscuro mb-6">
             Transforma tus estrías sin necesidad de tintas con nuestro tratamiento exclusivo. Este innovador procedimiento reestructura y regenera la piel, logrando resultados permanentes del 70 al 90%, ¡notorios desde la primera sesión!
           </p>
