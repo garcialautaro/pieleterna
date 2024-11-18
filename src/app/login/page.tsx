@@ -21,17 +21,21 @@ const Login: React.FC = () => {
       // Firebase Authentication
       await signInWithEmailAndPassword(auth, email, password);
       router.push("/"); // Redirige al home
-    } catch (err: any) {
+    } catch (err: unknown) {
       // Manejo de errores comunes
-      if (err.code === "auth/user-not-found") {
-        setError("No existe una cuenta con este correo.");
-      } else if (err.code === "auth/wrong-password") {
-        setError("La contraseña es incorrecta.");
+      if (err instanceof Error) {
+        if (err.message.includes("auth/user-not-found")) {
+          setError("No existe una cuenta con este correo.");
+        } else if (err.message.includes("auth/wrong-password")) {
+          setError("La contraseña es incorrecta.");
+        } else {
+          setError("Hubo un problema al iniciar sesión. Inténtalo más tarde.");
+        }
       } else {
-        setError("Hubo un problema al iniciar sesión. Inténtalo más tarde.");
+        setError("Ocurrió un error inesperado.");
       }
     } finally {
-      setLoading(false); // Finaliza la carga
+      setLoading(false);
     }
   };
 
@@ -83,11 +87,10 @@ const Login: React.FC = () => {
         <button
           type="submit"
           disabled={loading}
-          className={`w-full px-4 py-2 rounded ${
-            loading
-              ? "bg-gray-500 text-gray-300 cursor-not-allowed"
-              : "bg-beige_claro text-negro_ebano hover:bg-beige_oscuro"
-          }`}
+          className={`w-full px-4 py-2 rounded ${loading
+            ? "bg-gray-500 text-gray-300 cursor-not-allowed"
+            : "bg-beige_claro text-negro_ebano hover:bg-beige_oscuro"
+            }`}
         >
           {loading ? "Cargando..." : "Entrar"}
         </button>
