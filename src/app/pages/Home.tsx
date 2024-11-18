@@ -187,7 +187,7 @@ const Home: React.FC = () => {
       </section>
 
       {/* Nueva sección intermedia */}
-      <section ref={thirdSectionRef} className="bg-negro_claro text-beige_claro h-screen flex flex-col items-center justify-center px-6 sm:px-12">
+      <section ref={thirdSectionRef} className="bg-negro_claro text-beige_claro min-h-screen flex flex-col items-center justify-center px-6 sm:px-12 py-4">
         <div className="max-w-3xl text-center">
           <h1 className="text-4xl sm:text-5xl font-bold mb-6">¿Cómo funciona?</h1>
           <p className="text-lg sm:text-xl mb-6 text-beige_oscuro">
@@ -217,7 +217,7 @@ const Home: React.FC = () => {
       </section>
 
       {/* Sección de contacto final */}
-      <section ref={fourSectionRef} className="bg-negro_ebano text-beige_claro h-screen flex flex-col items-center justify-center px-6 sm:px-12">
+      <section ref={fourSectionRef} className="bg-negro_ebano text-beige_claro min-h-screen flex flex-col items-center justify-center px-6 sm:px-12">
         <div className="max-w-3xl text-center">
           <h1 className="text-4xl sm:text-5xl font-bold mb-6">¡No esperes más!</h1>
           <p className="text-lg sm:text-xl mb-6 text-beige_oscuro">
